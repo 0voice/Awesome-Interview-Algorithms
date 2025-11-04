@@ -18,7 +18,7 @@
 - [coding-interview](https://interview.doocs.org/coding-interview/)
 - [牛客网](https://www.nowcoder.com/exam/oj/ta?page=1&tpId=13&type=13)
   
-### 大厂刷题指南
+### 大厂刷题导航
 [字节](#字节跳动)  
 [阿里](#阿里巴巴)  
 [腾讯](#腾讯)  
