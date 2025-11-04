@@ -1,23 +1,32 @@
-<h1 align="center">2025年最新大厂算法题合集</h1> 
+<h1 align="center">📁 2025年最新大厂算法题合集</h1> 
 【Awesome-Algorithm-Resources】 是一个精选的算法题合集，专注于大厂面试、校招笔试和热门刷题平台的经典题目。无论你是在校生准备秋招/春招，还是职场开发者冲刺offer，这里汇集了近几年top大厂的算法挑战，帮助你系统掌握数据结构与算法核心技能。
 
-## 快速导航
-[大厂算法题](#大厂算法题)  
-[刷题平台](#刷题平台)  
+## 🧭 快速导航
+[大厂算法题](#-大厂算法题)  
+[刷题平台](#-刷题平台)  
 [资源说明](#-资源说明)  
 
-## 大厂算法题
+## 🧠 大厂算法题
 ### 说明：
-- 笔试/面试算法题多源于LeetCode原题或其改编版（变体）。为便于刷题，本README使用**LeetCode原题**名称和链接。
-- **查看大厂改编真题**：详见`algorithm interview questions/` 文件夹。
+- 优先刷 **LeetCode HOT100** 和**剑指Offer**：覆盖80%大厂考点。
+- 本README题目均使用 **LeetCode原题名称+链接**，便于直接刷题；链接中标注「剑指Offer」的题目，对应 LeetCode LCR 变体题。
+- **刷剑指Offer原题**：详见下方「剑指Offer刷题指南」。
+- **查看大厂改编真题**：可访问 `algorithm interview questions/` 文件夹，包含 LeetCode 原题变体（常见改动：增加业务场景，如“用户ID求和”）及大厂出题偏好。
 - **自行刷题**：参考下方[刷题平台](#刷题平台)。
-- **优先HOT 100题**：覆盖80%大厂考点。
-- **变体常见改动**：加业务场景（如“用户ID求和”）。
 
+### 剑指Offer刷题指南
+- [coding-interview](https://interview.doocs.org/coding-interview/)
+- [牛客网](https://www.nowcoder.com/exam/oj/ta?page=1&tpId=13&type=13)
+  
 ### 大厂刷题指南
 [字节跳动](#字节跳动)  
 [阿里巴巴](#阿里巴巴)  
 [腾讯](#腾讯)  
+[美团](#美团)  
+[百度](#百度)  
+[京东](#京东)  
+[华为](#华为)  
+[小米](#小米)
 
 
 ### 字节跳动
@@ -222,12 +231,204 @@
 | 表达式添加运算符 | 回溯、动态规划 | 困难 | 中等 | [LeetCode 282](https://leetcode.cn/problems/expression-add-operators/) |
 | 课程表 III | 贪心、优先队列 | 困难 | 中等 | [LeetCode 630](https://leetcode.cn/problems/course-schedule-iii/) |
 | 规划兼职工作 | 数组、二分查找、动态规划 | 困难 | 中等 | [LeetCode 1235](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) |
-| 最小化恶意字符串 | 字符串、贪心 | 困难 | 低 | [LeetCode 420](https://leetcode.cn/problems/strong-password-checker/) |
+| 强密码检验器 | 字符串、贪心 | 困难 | 低 | [LeetCode 420](https://leetcode.cn/problems/strong-password-checker/) |
 | 滑动谜题 | 广度优先搜索 | 困难 | 低 | [LeetCode 773](https://leetcode.cn/problems/sliding-puzzle/) |
 | 最优账单平衡 | 图、最短路径 | 困难 | 中等 | [LeetCode 464](https://leetcode.cn/problems/optimal-account-balancing/) |
-## 刷题平台
+
+### 美团
+| 题目名称 | 标签 | 难度 | 频率 | 题目链接 |
+|----------|------|------|------|----------|
+| 多数元素 | 数组、分治 | 简单 | 高 | [LeetCode 169](https://leetcode.cn/problems/majority-element/) |
+| 复数乘法 | 数学、字符串 | 简单 | 中等 | [LeetCode 537](https://leetcode.cn/problems/complex-number-multiplication/) |
+| 替换空格 | 字符串、双指针 | 简单 | 高 | [剑指 Offer 05](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/) |
+| 斐波那契数列 | 动态规划 | 简单 | 高 | [剑指 Offer 126](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/) |
+| 矩阵中的路径 | 深度优先搜索、回溯 | 中等 | 高 | [剑指 Offer 12](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/) |
+| 机器人的运动范围 | 深度优先搜索、广度优先搜索 | 中等 | 高 | [剑指 Offer 13](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) |
+| 剪绳子 | 动态规划、数学 | 中等 | 高 | [剑指 Offer 14](https://leetcode.cn/problems/jian-sheng-zi-lcof/) |
+| 数组中的逆序对 | 归并排序、数组 | 中等 | 高 | [剑指 Offer 51](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |
+| 路径总和 III | 树、深度优先搜索 | 中等 | 高 | [LeetCode 437](https://leetcode.cn/problems/path-sum-iii/) |
+| 乘积最大子数组 | 数组、动态规划 | 中等 | 高 | [LeetCode 152](https://leetcode.cn/problems/maximum-product-subarray/) |
+| 奇偶排序 | 数组、双指针 | 中等 | 高 | [LeetCode 922](https://leetcode.cn/problems/sort-array-by-parity-ii/) |
+| 区间和的更改 | 树状数组、区间查询 | 中等 | 高 | [LeetCode 307](https://leetcode.cn/problems/range-sum-query-mutable/) |
+| 用 Rand7() 实现 Rand10() | 数学、概率 | 中等 | 高 | [LeetCode 470](https://leetcode.cn/problems/implement-rand10-using-rand7/) |
+| 最近的请求次数 | 设计、滑动窗口 | 中等 | 高 | [LeetCode 933](https://leetcode.cn/problems/number-of-recent-calls/) |
+| 设计哈希映射 | 设计、哈希表 | 中等 | 高 | [LeetCode 706](https://leetcode.cn/problems/design-hashmap/) |
+| 设计链表 | 设计、链表 | 中等 | 高 | [LeetCode 707](https://leetcode.cn/problems/design-linked-list/) |
+| 推多米诺 | 模拟、队列 | 中等 | 中等 | [LeetCode 838](https://leetcode.cn/problems/push-dominoes/) |
+| 螺旋矩阵 II | 数组、数学 | 中等 | 高 | [LeetCode 59](https://leetcode.cn/problems/spiral-matrix-ii/) |
+| 第一个只出现一次的字符 | 字符串、哈希表 | 中等 | 高 | [剑指 Offer 50](https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) |
+| 和为 s 的两个数字 | 数组、哈希表 | 中等 | 高 | [剑指 Offer 57](https://leetcode.cn/problems/he-wei-s-de-liang-ge-shu-zi-lcof/) |
+| 滑动窗口的最大值 | 队列、滑动窗口 | 中等 | 高 | [剑指 Offer 59 - I](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/) |
+| 圆圈中最后剩下的数 | 数组、数学 | 中等 | 高 | [剑指 Offer 62](https://leetcode.cn/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) |
+| 构建乘积数组 | 数组、前缀和 | 中等 | 高 | [剑指 Offer 66](https://leetcode.cn/problems/gou-jian-cheng-ji-shu-zu-lcof/) |
+| 把数组排成最小的数 | 排序、字符串 | 中等 | 高 | [剑指 Offer 45](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/) |
+| 把数字翻译成字符串 | 动态规划 | 中等 | 高 | [剑指 Offer 46](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) |
+| 礼物的最大价值 | 动态规划、矩阵 | 中等 | 高 | [剑指 Offer 47](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/) |
+| 在排序数组中查找数字 I | 数组、二分查找 | 中等 | 高 | [剑指 Offer 53 - I](https://leetcode.cn/problems/zai-pai-lie-shu-zu-zhong-bian-yi-shu-zi-lcof/) |
+| 数组中数字出现的次数 | 位运算、数组 | 中等 | 高 | [剑指 Offer 56 - I](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/) |
+| 二叉搜索树的第k大节点 | 树、深度优先搜索 | 中等 | 高 | [剑指 Offer 54](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) |
+| 股票的最大利润 | 数组、动态规划 | 中等 | 高 | [剑指 Offer 63](https://leetcode.cn/problems/gu-piao-de-zui-da-li-run-lcof/) |
+| 强密码检验器 | 字符串、贪心 | 困难 | 高 | [LeetCode 420](https://leetcode.cn/problems/strong-password-checker/) |
+| 滑动谜题 | 广度优先搜索 | 困难 | 中等 | [LeetCode 773](https://leetcode.cn/problems/sliding-puzzle/) |
+| 最优账单平衡 | 图、最短路径 | 困难 | 高 | [LeetCode 464](https://leetcode.cn/problems/optimal-account-balancing/) |
+| 戳气球 | 动态规划、区间 | 困难 | 高 | [LeetCode 312](https://leetcode.cn/problems/burst-balloons/) |
+| 最小覆盖子串 | 哈希表、滑动窗口 | 困难 | 高 | [LeetCode 76](https://leetcode.cn/problems/minimum-window-substring/) |
+
+### 百度
+| 题目名称 | 标签 | 难度 | 频率 | 题目链接 |
+|----------|------|------|------|----------|
+| 搜索插入位置 | 数组、二分查找 | 简单 | 高 | [LeetCode 35](https://leetcode.cn/problems/search-insert-position/) |
+| 多数元素 | 数组、分治 | 简单 | 高 | [LeetCode 169](https://leetcode.cn/problems/majority-element/) |
+| 搜索二维矩阵 | 数组、二分查找 | 中等 | 高 | [LeetCode 74](https://leetcode.cn/problems/search-a-2d-matrix/) |
+| 矩阵中的路径 | 深度优先搜索、回溯 | 中等 | 高 | [剑指 Offer 12](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/) |
+| 机器人的运动范围 | 深度优先搜索、广度优先搜索 | 中等 | 高 | [剑指 Offer 13](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) |
+| 剪绳子 | 动态规划、数学 | 中等 | 高 | [剑指 Offer 14](https://leetcode.cn/problems/jian-sheng-zi-lcof/) |
+| 数组中的逆序对 | 归并排序、数组 | 中等 | 高 | [剑指 Offer 51](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |
+| 路径总和 III | 树、深度优先搜索 | 中等 | 高 | [LeetCode 437](https://leetcode.cn/problems/path-sum-iii/) |
+| 乘积最大子数组 | 数组、动态规划 | 中等 | 高 | [LeetCode 152](https://leetcode.cn/problems/maximum-product-subarray/) |
+| 奇偶排序 | 数组、双指针 | 中等 | 高 | [LeetCode 922](https://leetcode.cn/problems/sort-array-by-parity-ii/) |
+| 区间和的更改 | 树状数组、区间查询 | 中等 | 高 | [LeetCode 307](https://leetcode.cn/problems/range-sum-query-mutable/) |
+| 用 Rand7() 实现 Rand10() | 数学、概率 | 中等 | 高 | [LeetCode 470](https://leetcode.cn/problems/implement-rand10-using-rand7/) |
+| 最近的请求次数 | 设计、滑动窗口 | 中等 | 高 | [LeetCode 933](https://leetcode.cn/problems/number-of-recent-calls/) |
+| 设计哈希映射 | 设计、哈希表 | 中等 | 高 | [LeetCode 706](https://leetcode.cn/problems/design-hashmap/) |
+| 插入删除得数 O(1) - 双向链表实现 | 设计、链表 | 中等 | 高 | [LeetCode 707](https://leetcode.cn/problems/design-linked-list/) |
+| 推多米诺 | 模拟、队列 | 中等 | 中等 | [LeetCode 838](https://leetcode.cn/problems/push-dominoes/) |
+| 搜索旋转排序数组 | 数组、二分查找 | 中等 | 高 | [LeetCode 33](https://leetcode.cn/problems/search-in-rotated-sorted-array/) |
+| 寻找旋转排序数组中的最小值 | 数组、二分查找 | 中等 | 高 | [LeetCode 153](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) |
+| 二叉搜索树的第k大节点 | 树、深度优先搜索 | 中等 | 高 | [剑指 Offer 54](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) |
+| 强密码检验器 | 字符串、贪心 | 困难 | 高 | [LeetCode 420](https://leetcode.cn/problems/strong-password-checker/) |
+| 滑动谜题 | 广度优先搜索 | 困难 | 中等 | [LeetCode 773](https://leetcode.cn/problems/sliding-puzzle/) |
+| 最优账单平衡 | 图、最短路径 | 困难 | 高 | [LeetCode 464](https://leetcode.cn/problems/optimal-account-balancing/) |
+| 戳气球 | 动态规划、区间 | 困难 | 高 | [LeetCode 312](https://leetcode.cn/problems/burst-balloons/) |
+| 最小覆盖子串 | 哈希表、滑动窗口 | 困难 | 高 | [LeetCode 76](https://leetcode.cn/problems/minimum-window-substring/) |
+| 两个排序数组的中位数 | 数组、二分查找 | 困难 | 高 | [LeetCode 4](https://leetcode.cn/problems/median-of-two-sorted-arrays/) |
+| 正则表达式匹配 | 字符串、动态规划 | 困难 | 高 | [LeetCode 10](https://leetcode.cn/problems/regular-expression-matching/) |
+| 通配符匹配 | 字符串、动态规划 | 困难 | 高 | [LeetCode 44](https://leetcode.cn/problems/wildcard-matching/) |
+| 编辑距离 | 动态规划 | 困难 | 高 | [LeetCode 72](https://leetcode.cn/problems/edit-distance/) |
+| 最佳买卖股票时机含冷冻期 | 数组、动态规划 | 困难 | 高 | [LeetCode 309](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) |
+| 买卖股票的最佳时机 IV | 数组、动态规划 | 困难 | 高 | [LeetCode 188](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) |
+| 二叉树的序列化与反序列化 | 树、深度优先搜索 | 困难 | 高 | [LeetCode 297](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) |
+| 表达式添加运算符 | 回溯、动态规划 | 困难 | 高 | [LeetCode 282](https://leetcode.cn/problems/expression-add-operators/) |
+| 基本计算器 | 栈、递归 | 困难 | 高 | [LeetCode 224](https://leetcode.cn/problems/basic-calculator/) |
+| 外星字典 | 图、拓扑排序 | 困难 | 高 | [LeetCode 269](https://leetcode.cn/problems/alien-dictionary/) |
+| 课程表 III | 贪心、优先队列 | 困难 | 高 | [LeetCode 630](https://leetcode.cn/problems/course-schedule-iii/) |
+| 规划兼职工作 | 数组、二分查找、动态规划 | 困难 | 高 | [LeetCode 1235](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) |
+| 序列的重建 | 图、拓扑排序 | 困难 | 高 | [LeetCode 444](https://leetcode.cn/problems/sequence-reconstruction/) |
+| 最大化工具 | 贪心、优先队列 | 困难 | 高 | [LeetCode 1648](https://leetcode.cn/problems/sell-diminishing-valued-colored-balls/) |
+
+### 京东
+| 题目名称 | 标签 | 难度 | 频率 | 题目链接 |
+|----------|------|------|------|----------|
+| 多数元素 | 数组、分治 | 简单 | 高 | [LeetCode 169](https://leetcode.cn/problems/majority-element/) |
+| 搜索插入位置 | 数组、二分查找 | 简单 | 高 | [LeetCode 35](https://leetcode.cn/problems/search-insert-position/) |
+| 替换空格 | 字符串、双指针 | 简单 | 高 | [剑指 Offer 05](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/) |
+| 斐波那契数列 | 动态规划 | 简单 | 高 | [LeetCode 509](https://leetcode.cn/problems/fibonacci-number/) |
+| 旋转数组的最小数字 | 数组、二分查找 | 简单 | 高 | [剑指 Offer 11](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) |
+| 用两个栈实现队列 | 栈、设计 | 简单 | 高 | [剑指 Offer 09](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) |
+| 调整数组顺序使奇数位于偶数前面 | 数组、双指针 | 简单 | 高 | [剑指 Offer 21](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) |
+| 反转链表 | 链表、递归 | 简单 | 高 | [剑指 Offer 24](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/) |
+| 复数乘法 | 数学、字符串 | 中等 | 中等 | [LeetCode 537](https://leetcode.cn/problems/complex-number-multiplication/) |
+| 矩阵中的路径 | 深度优先搜索、回溯 | 中等 | 高 | [剑指 Offer 12](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/) |
+| 机器人的运动范围 | 深度优先搜索、广度优先搜索 | 中等 | 高 | [剑指 Offer 13](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) |
+| 剪绳子 | 动态规划、数学 | 中等 | 高 | [剑指 Offer 14](https://leetcode.cn/problems/jian-sheng-zi-lcof/) |
+| 数组中的逆序对 | 归并排序、数组 | 中等 | 高 | [剑指 Offer 51](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |
+| 路径总和 III | 树、深度优先搜索 | 中等 | 高 | [LeetCode 437](https://leetcode.cn/problems/path-sum-iii/) |
+| 乘积最大子数组 | 数组、动态规划 | 中等 | 高 | [LeetCode 152](https://leetcode.cn/problems/maximum-product-subarray/) |
+| 奇偶排序 | 数组、双指针 | 中等 | 高 | [LeetCode 922](https://leetcode.cn/problems/sort-array-by-parity-ii/) |
+| 区间和的更改 | 树状数组、区间查询 | 中等 | 高 | [LeetCode 307](https://leetcode.cn/problems/range-sum-query-mutable/) |
+| 用 Rand7() 实现 Rand10() | 数学、概率 | 中等 | 高 | [LeetCode 470](https://leetcode.cn/problems/implement-rand10-using-rand7/) |
+| 最近的请求次数 | 设计、滑动窗口 | 中等 | 高 | [LeetCode 933](https://leetcode.cn/problems/number-of-recent-calls/) |
+| 设计哈希映射 | 设计、哈希表 | 中等 | 高 | [LeetCode 706](https://leetcode.cn/problems/design-hashmap/) |
+| 插入删除得数 O(1) - 双向链表实现 | 设计、链表 | 中等 | 高 | [LeetCode 707](https://leetcode.cn/problems/design-linked-list/) |
+| 推多米诺 | 模拟、队列 | 中等 | 中等 | [LeetCode 838](https://leetcode.cn/problems/push-dominoes/) |
+| 搜索旋转排序数组 | 数组、二分查找 | 中等 | 高 | [LeetCode 33](https://leetcode.cn/problems/search-in-rotated-sorted-array/) |
+| 寻找旋转排序数组中的最小值 | 数组、二分查找 | 中等 | 高 | [LeetCode 153](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) |
+| 二叉搜索树的第k大节点 | 树、深度优先搜索 | 中等 | 高 | [剑指 Offer 54](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) |
+| 树的子结构 | 树、深度优先搜索 | 中等 | 高 | [剑指 Offer 26](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/) |
+| 二叉树的镜像 | 树、递归 | 中等 | 高 | [剑指 Offer 27](https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/) |
+| 对称的二叉树 | 树、递归 | 中等 | 高 | [剑指 Offer 28](https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/) |
+| 顺时针打印矩阵 | 数组、模拟 | 中等 | 高 | [剑指 Offer 29](https://leetcode.cn/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/) |
+| 包含min函数的栈 | 栈、设计 | 中等 | 高 | [剑指 Offer 30](https://leetcode.cn/problems/bao-han-minhan-shu-de-die-dai-lcof/) |
+| 从上到下打印二叉树 | 树、广度优先搜索 | 中等 | 高 | [剑指 Offer 32 - I](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/) |
+| 二叉树中和为某一值的路径 | 树、深度优先搜索 | 中等 | 高 | [剑指 Offer 34](https://leetcode.cn/problems/er-cha-shu-zhong-he-wei-suo-you-de-lu-jing-lcof/) |
+| 复杂链表的复制 | 链表、哈希表 | 中等 | 高 | [剑指 Offer 35](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/) |
+| 强密码检验器 | 字符串、贪心 | 困难 | 高 | [LeetCode 420](https://leetcode.cn/problems/strong-password-checker/) |
+| 滑动谜题 | 广度优先搜索 | 困难 | 中等 | [LeetCode 773](https://leetcode.cn/problems/sliding-puzzle/) |
+| 最优账单平衡 | 图、最短路径 | 困难 | 高 | [LeetCode 464](https://leetcode.cn/problems/optimal-account-balancing/) |
+| 戳气球 | 动态规划、区间 | 困难 | 高 | [LeetCode 312](https://leetcode.cn/problems/burst-balloons/) |
+| 最小覆盖子串 | 哈希表、滑动窗口 | 困难 | 高 | [LeetCode 76](https://leetcode.cn/problems/minimum-window-substring/) |
+
+### 华为
+| 题目名称 | 标签 | 难度 | 频率 | 题目链接 |
+|----------|------|------|------|----------|
+| 位1的个数 | 位运算 | 简单 | 高 | [LeetCode 191](https://leetcode.cn/problems/number-of-1-bits/) |
+| 汉明重量 | 位运算 | 简单 | 高 | [LeetCode 191](https://leetcode.cn/problems/number-of-1-bits/) |
+| 旋转数组的最小数字 | 数组、二分查找 | 简单 | 高 | [剑指 Offer 11](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) |
+| 用两个栈实现队列 | 栈、设计 | 简单 | 高 | [剑指 Offer 09](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) |
+| 调整数组顺序使奇数位于偶数前面 | 数组、双指针 | 简单 | 高 | [剑指 Offer 21](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) |
+| 二叉树的最大深度 | 树、深度优先搜索 | 简单 | 高 | [LeetCode 104](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) |
+| 翻转二叉树 | 树、深度优先搜索 | 简单 | 高 | [LeetCode 226](https://leetcode.cn/problems/invert-binary-tree/) |
+| 路径总和 | 树、深度优先搜索 | 简单 | 高 | [LeetCode 112](https://leetcode.cn/problems/path-sum/) |
+| 左旋转字符串 | 字符串、模拟 | 简单 | 高 | [剑指 Offer 58 - II](https://leetcode.cn/problems/zuo-xuan-zhuan-dan-ci-chuan-lcof/) |
+| 不用加减乘除做加法 | 位运算 | 简单 | 高 | [剑指 Offer 65](https://leetcode.cn/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/) |
+| 替换空格 | 字符串、双指针 | 简单 | 高 | [剑指 Offer 05](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/) |
+| 斐波那契数列 | 动态规划 | 简单 | 高 | [剑指 Offer 10 - I](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/) |
+| 最长连续递增子序列 | 数组、动态规划 | 中等 | 高 | [LeetCode 674](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) |
+| 包含重复数字 | 数组、滑动窗口 | 中等 | 高 | [LeetCode 220](https://leetcode.cn/problems/contains-duplicate-iii/) |
+| 二叉树展开为链表 | 树、深度优先搜索 | 中等 | 高 | [LeetCode 114](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) |
+| 对称的二叉树 | 树、递归 | 中等 | 高 | [LeetCode 101](https://leetcode.cn/problems/symmetric-tree/) |
+| 二叉树的层序遍历 | 树、广度优先搜索 | 中等 | 高 | [LeetCode 102](https://leetcode.cn/problems/binary-tree-level-order-traversal/) |
+| 树中两个节点的最低公共祖先 | 树、深度优先搜索 | 中等 | 高 | [剑指 Offer 68 - I](https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) |
+| 二叉树的最近公共祖先 | 树、深度优先搜索 | 中等 | 高 | [LeetCode 236](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) |
+| 包含min函数的栈 | 栈、设计 | 中等 | 高 | [LeetCode 155](https://leetcode.cn/problems/min-stack/) |
+| 滑动窗口的最大值 | 队列、滑动窗口 | 中等 | 高 | [LeetCode 239](https://leetcode.cn/problems/sliding-window-maximum/) |
+| 数组中数字出现的次数 | 位运算、数组 | 中等 | 高 | [剑指 Offer 56 - I](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/) |
+| 翻转单词顺序 | 字符串、双指针 | 中等 | 高 | [剑指 Offer 58 - I](https://leetcode.cn/problems/fan-zhuan-dan-ci-shun-xu-lcof/) |
+| 扑克牌中的顺子 | 数组、排序 | 中等 | 高 | [剑指 Offer 61](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/) |
+| 求1+2+…+n | 数学、位运算 | 中等 | 高 | [剑指 Offer 64](https://leetcode.cn/problems/qiu-1-2-n-lcof/) |
+| 把字符串转换成整数 | 字符串、数学 | 中等 | 高 | [剑指 Offer 67](https://leetcode.cn/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zi-fu-shu-lcof/) |
+| 矩阵中的路径 | 深度优先搜索、回溯 | 中等 | 高 | [剑指 Offer 12](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/) |
+| 机器人的运动范围 | 深度优先搜索、广度优先搜索 | 中等 | 高 | [剑指 Offer 13](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) |
+| 剪绳子 | 动态规划、数学 | 中等 | 高 | [剑指 Offer 14 - I](https://leetcode.cn/problems/jian-sheng-zi-lcof/) |
+| 把数组排成最小的数 | 排序、字符串 | 中等 | 高 | [剑指 Offer 45](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/) |
+| 把数字翻译成字符串 | 动态规划 | 中等 | 高 | [剑指 Offer 46](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) |
+| 礼物的最大价值 | 动态规划、矩阵 | 中等 | 高 | [剑指 Offer 47](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/) |
+| 第一个只出现一次的字符 | 字符串、哈希表 | 中等 | 高 | [剑指 Offer 50](https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) |
+| 丑数 | 数学、堆 | 中等 | 高 | [剑指 Offer 49](https://leetcode.cn/problems/chou-shu-lcof/) |
+| 和为 s 的两个数字 | 数组、哈希表 | 中等 | 高 | [剑指 Offer 57](https://leetcode.cn/problems/he-wei-s-de-liang-ge-shu-zi-lcof/) |
+| 圆圈中最后剩下的数 | 数组、数学 | 中等 | 高 | [剑指 Offer 62](https://leetcode.cn/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) |
+| 构建乘积数组 | 数组、前缀和 | 中等 | 高 | [剑指 Offer 66](https://leetcode.cn/problems/gou-jian-cheng-ji-shu-zu-lcof/) |
+| 在排序数组中查找数字 I | 数组、二分查找 | 中等 | 高 | [剑指 Offer 53 - I](https://leetcode.cn/problems/zai-pai-lie-shu-zu-zhong-bian-yi-shu-zi-lcof/) |
+
+### 小米
+| 题目名称 | 标签 | 难度 | 频率 | 题目链接 |
+|----------|------|------|------|----------|
+| 颜色分类 | 数组、双指针、排序 | 中等 | 高 | [LeetCode 75](https://leetcode.cn/problems/sort-colors/) |
+| 字符串解码 | 栈、字符串 | 中等 | 高 | [LeetCode 394](https://leetcode.cn/problems/decode-string/) |
+| 岛屿数量 | 深度优先搜索、广度优先搜索、并查集 | 中等 | 高 | [LeetCode 200](https://leetcode.cn/problems/number-of-islands/) |
+| 最长回文子串 | 字符串、动态规划 | 中等 | 高 | [LeetCode 5](https://leetcode.cn/problems/longest-palindromic-substring/) |
+| 编辑距离 | 字符串、动态规划 | 困难 | 中 | [LeetCode 72](https://leetcode.cn/problems/edit-distance/) |
+| 最长有效括号 | 字符串、栈、动态规划 | 困难 | 中 | [LeetCode 32](https://leetcode.cn/problems/longest-valid-parentheses/) |
+| 天际线问题 | 树状数组、线段树、扫描线 | 困难 | 低 | [LeetCode 218](https://leetcode.cn/problems/the-skyline-problem/) |
+| 数据流的中位数 | 设计、堆 | 困难 | 中 | [LeetCode 295](https://leetcode.cn/problems/find-median-from-data-stream/) |
+| 复杂链表的复制 | 链表、哈希表 | 中等 | 高 | [剑指 Offer 35](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/) |
+| 二叉搜索树的后序遍历序列 | 栈、树、二叉搜索树 | 中等 | 高 | [剑指 Offer 33](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) |
+| 数字序列中某一位的数字 | 数学、二分查找 | 中等 | 中 | [剑指 Offer 44](https://leetcode.cn/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/) |
+| 把二叉树打印成多行 | 树、广度优先搜索 | 中等 | 中 | [剑指 Offer 32 - II](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/) |
+| 序列化二叉树 | 树、深度优先搜索、广度优先搜索 | 困难 | 低 | [剑指 Offer 37](https://leetcode.cn/problems/xu-lie-hua-er-cha-shu-lcof/) |
+| 剪绳子 II | 数学、动态规划 | 中等 | 中 | [剑指 Offer 14 - II](https://leetcode.cn/problems/jian-sheng-zi-ii-lcof/) |
+| 数组中出现次数超过一半的数字 | 数组、哈希表、分治 | 简单 | 高 | [剑指 Offer 39](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) |
+| 最小的k个数 | 数组、分治、堆 | 简单 | 高 | [剑指 Offer 40](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/) |
+| 数据流中的第k大元素 | 堆、设计 | 简单 | 高 | [LeetCode 703](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) |
+| 寻找两个正序数组的中位数 | 数组、二分查找 | 困难 | 中 | [LeetCode 4](https://leetcode.cn/problems/median-of-two-sorted-arrays/) |
+| 柱状图中最大的矩形 | 栈、数组 | 困难 | 中 | [LeetCode 84](https://leetcode.cn/problems/largest-rectangle-in-histogram/) |
+| 最大矩形 | 栈、数组、动态规划 | 困难 | 低 | [LeetCode 85](https://leetcode.cn/problems/maximal-rectangle/) |
+
+
+## 🌐 刷题平台
 - [力扣 (LeetCode)](https://leetcode.cn/)
 - [牛客网](https://www.nowcoder.com/)
+- [acwing](https://www.acwing.com/problem/)
 - [洛谷](https://www.luogu.com.cn/)
 - [杭电OJ](https://acm.hdu.edu.cn/)
 - [Codeforces](https://codeforces.com/)
@@ -239,4 +440,6 @@
 - **牛客网**：大厂笔试/面试真题复盘与变体描述。
 - **CodeTop**：高频题统计。
 
-**免责声明**：内容仅供学习参考，刷题时结合官方题解验证。
+**免责声明**：
+- 本仓库所有题目及相关内容仅用于学习交流，刷题时建议结合官方题解验证思路。
+- 资源整理过程中可能存在链接失效、信息误差等纰漏，若发现问题，欢迎在 Issue 中留言反馈，感谢你的指正与支持！
