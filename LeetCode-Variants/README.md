@@ -1,16 +1,15 @@
-# 大厂高频面试/笔试真题（LeetCode原题改编）
+# 大厂算法题出题偏好
+基于2025年牛客网/LeetCode公司标签面经汇总（200+份真实复盘），剖析高频主题、岗位差异和趋势，帮助你高效刷题、稳拿offer！
 
-大厂命题常以 LeetCode 原题为基础，通过 **包装业务场景、调整输入输出约束、增加边界条件** 等方式改编，核心算法逻辑与原题高度一致。  
-刷题时可先攻克对应 LeetCode 原题掌握核心思路，再结合本README的大厂改编场景强化练习，快速适配笔试面试的实际考察形式，提升解题效率与应试能力。
 
 ## 🧭 快速导航
 [字节跳动](#字节跳动)  
 [阿里巴巴](#阿里巴巴)  
-[腾讯](#腾讯)
-[美团](#美团)
-[百度](#百度)
-[京东](#京东)
-[华为](#华为)
+[腾讯](#腾讯)  
+[美团](#美团)  
+[百度](#百度)  
+[京东](#京东)  
+[华为](#华为)  
 ### 字节跳动
 ### 出题偏好
 - **整体偏好**：
@@ -23,41 +22,6 @@
   - 客户端（e.g., 抖音 App、头条客户端）：数组/字符串/链表（34%），偏「高效端侧实现」（如 O(1) 空间的本地内容解析），高频题涵盖「数组双指针的滑动匹配」「链表的条件反转」等，业务场景如 App 视频预加载的增量同步、用户标签的快速检索、滑动界面性能调优。
   - 数据开发/数仓：图/DP/并行计算（41%），核心考察「TB 级内容的处理鲁棒性」（如亿级视频日志的图谱分析变体），适配 Flink/Spark 框架，业务场景如跨域内容数据的实时聚合、用户偏好轨迹的离线建模、广告投放数据的去重与 A/B 测试分析。
 
- ### 改编题目
-| 改编描述 | 业务场景 | LeetCode原题 |
-|----------|----------|--------------|
-| 给定K个有序链表，合并成一个有序链表。面试常问：分治两两合并或外部日志流处理优化。 | 字节视频时间戳同步或日志聚合场景 | [LC23 合并 K 个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists/) |
-| 给定0/1网格，统计连通岛屿数量。面试常问：计算最大岛屿面积（LC695）。 | 字节图像分割或用户兴趣聚类场景 | [LC200 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |
-| 给定旋转有序数组，搜索目标值。面试常问：带重复元素（LC81）噪声处理。 | 字节推荐ID列表二分查询 | [LC33 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) |
-| 给定二叉树，求最大路径和（任意节点）。面试常问：路径必须通过根节点。 | 字节内容推荐树形权重优化 | [LC124 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) |
-| 实现LRU缓存，支持get/put O(1)操作。面试常问：多线程锁或LFU淘汰（LC460）。 | 字节抖音视频元数据缓存设计 | [LC146 LRU 缓存机制](https://leetcode.cn/problems/lru-cache/) |
-| 给定迷宫网格，从起点滚球到目标停稳位置。面试常问：动态墙壁生成。 | 字节视频帧路径搜索或游戏导航 | [LC490 迷宫中是否有路径](https://leetcode.cn/problems/the-maze/) |
-| 给定表达式字符串，计算+ - * /值（忽略优先级）。面试常问：带括号扩展（LC224），示例“2*3+5/1”。 | 字节配置表达式解析 | [LC227 基本计算器 II](https://leetcode.cn/problems/basic-calculator-ii/) |
-| 给定数组和窗口k，求每个窗口最大值。面试常问：窗口中位数（LC480）。 | 字节用户行为实时峰值监控 | [LC239 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) |
-| 给定角色攻击/防御数组，计数弱角色（被支配）。面试常问：弱点排序扩展。 | 字节游戏推荐系统 | [LC1996 游戏中弱角色的数量](https://leetcode.cn/problems/the-number-of-weak-characters-in-the-game/) |
-| 给定股票价格数组，允许多次买卖最大利润。面试常问：手续费或单次（LC121）。 | 字节推荐多次优化模拟 | [LC122 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) |
-| 给定课程和先修关系，返回学习顺序（拓扑排序）。面试常问：任务依赖调度。 | 字节项目流程管理 | [LC210 课程表 II](https://leetcode.cn/problems/course-schedule-ii/) |
-| 给定括号字符串，求最长有效子串长度。面试常问：括号匹配计数，使用DP或栈。 | 字节表达式验证 | [LC32 最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/) |
-| 给定候选数组和目标，求所有组合（可复用）。面试常问：无复用（LC40）+背包约束。 | 字节资源组合生成 | [LC39 组合总和](https://leetcode.cn/problems/combination-sum/) |
-| 在N*N棋盘放置N皇后，无攻击。面试常问：骑士巡游扩展，剪枝优化。 | 字节棋盘约束问题 | [LC51 N 皇后](https://leetcode.cn/problems/n-queens/) |
-| 给定整数数组，求连续子数组最大和。面试常问：固定k长度子数组。 | 字节交易序列优化 | [LC53 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) |
-| 给定股票价格数组，求单次买卖最大利润。面试常问：冷却期或手续费。 | 字节交易模拟 | [LC121 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) |
-| 给定链表，实现O(n log n)排序。面试常问：快速排序变体。 | 字节数据链表排序 | [LC148 排序链表](https://leetcode.cn/problems/sort-list/) |
-| 给定基础/高级甜点成本，求最近目标成本组合。面试常问：背包体积可负。 | 字节资源枚举优化 | [LC1671 最近的甜点成本](https://leetcode.cn/problems/closest-dessert-cost/) |
-| 给定整数数组，找出和为0的三元组（无重复）。面试常问：4Sum多指针扩展。 | 字节多维特征匹配 | [LC15 三数之和](https://leetcode.cn/problems/3sum/) |
-| 给定带括号表达式，计算值。面试常问：优先级运算符添加。 | 字节嵌套配置计算 | [LC224 基本计算器](https://leetcode.cn/problems/basic-calculator/) |
-| 给定0/1网格，计算最大岛屿面积。面试常问：动态边界更新。 | 字节连通区域分析 | [LC695 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/) |
-| 给定矩阵，按螺旋顺序遍历元素。面试常问：逆向生成（LC59）。 | 字节矩阵数据提取 | [LC54 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/) |
-| 给定0/1矩阵，求最大全1正方形边长。面试常问：O(n)空间优化。 | 字节矩阵模式识别 | [LC221 最大正方形](https://leetcode.cn/problems/maximal-square/) |
-| 给定数组和窗口k，求每个窗口中位数。面试常问：动态窗口调整。 | 字节数据流中位分析 | [LC480 滑动窗口中位数](https://leetcode.cn/problems/sliding-window-median/) |
-| 给定开始词、结束词和字典，求最短变换序列。面试常问：双向BFS加速。 | 字节单词梯度优化 | [LC127 单词接龙](https://leetcode.cn/problems/word-ladder/) |
-| 序列化/反序列化二叉树（字符串表示）。面试常问：BFS层序压缩。 | 字节树数据持久化 | [LC297 二叉树的序列化与反序列化](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) |
-| 给定图节点，深拷贝整个图。面试常问：环形图处理。 | 字节图结构克隆 | [LC133 克隆图](https://leetcode.cn/problems/clone-graph/) |
-| 给定高度数组，计算陷水总量。面试常问：动态高度柱子。 | 字节柱状资源模拟 | [LC42 接雨水](https://leetcode.cn/problems/trapping-rain-water/) |
-| 给定数组，找出第K大元素。面试常问：实时流处理。 | 字节排名系统 | [LC215 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) |
-| 设计Twitter系统，支持发帖/关注/feed。面试常问：新闻流多用户排序。 | 字节社交feed设计 | [LC355 设计推特](https://leetcode.cn/problems/design-twitter/) |
-
-
 ## 阿里巴巴
 ### 出题偏好
 - **整体偏好**：
@@ -69,39 +33,6 @@
   - 算法岗（推荐/广告/搜索）：图/贪心/DP（40%），侧重「大规模数据适配」（如亿级用户的最短路径变体），融合 ML 特征工程（如基于用户行为的序列 DP）。
   - 客户端（e.g., 支付宝、钉钉）：字符串/链表/树（35%），偏「内存优化型变体」（如 O(1) 空间的链表操作），业务场景如本地数据同步、界面渲染优化。
   - 大数据/数仓：分治/外排序/哈希（30%），核心考察「海量数据处理」（如超大数据组的逆序对变体），适配 Hadoop/Spark 场景。
-### 改编题目
-| 改编描述 | 业务场景 | LeetCode原题 |
-|----------|----------|--------------|
-| 给定一个字符串，找出其中没有重复字符的最长子串长度。面试常问：如果限制最多K个不同字符，怎么改？ | 阿里文本搜索场景，如查询历史无重复关键词提取 | [LC3 最长无重复字符的子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) |
-| 给定两个有序数组，找出合并后的中位数。面试常问：数组长度奇偶不同时边界处理。 | 阿里风控，如合并用户行为分数求平均风险值 | [LC4 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/) |
-| 给定一个字符串，找出最长的回文子串。面试常问：奇偶长度中心扩展。 | 阿里商品标题模式匹配，如检测对称描述 | [LC5 最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/) |
-| 给定高度数组，求两个柱子间最大水容积（宽度*最小高度）。面试常问：动态调整高度变化。 | 阿里资源分配，如负载均衡模拟 | [LC11 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) |
-| 给定整数数组，找出和为0的三元组（无重复）。面试常问：扩展到4Sum多维去重。 | 阿里订单特征匹配 | [LC15 三数之和](https://leetcode.cn/problems/3sum/) |
-| 给定数字字符串，生成所有可能的字母组合（2-9映射）。面试常问：添加字典过滤有效词。 | 阿里序列生成，如验证码组合 | [LC17 电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) |
-| 给定括号字符串，判断是否有效匹配。面试常问：多类型括号嵌套。 | 阿里配置验证，如JSON表达式解析 | [LC20 有效的括号](https://leetcode.cn/problems/valid-parentheses/) |
-| 给定两个有序链表，合并成一个有序链表。面试常问：扩展到K个链表（LC23）。 | 阿里日志和订单流融合 | [LC21 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/) |
-| 给定整数数组，求连续子数组的最大和。面试常问：固定k长度子数组。 | 阿里交易额连续优化 | [LC53 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) |
-| 给定股票价格数组，求单次买卖最大利润。面试常问：添加冷却期或手续费。 | 阿里交易风控模拟 | [LC121 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) |
-| 给定字符串和单词字典，判断是否能拆分成字典词。面试常问：返回所有拆分方式（LC140）。 | 阿里商品描述分词 | [LC139 单词拆分](https://leetcode.cn/problems/word-break/) |
-| 给定0/1网格，统计连通岛屿数量。面试常问：计算最大岛屿面积（LC695）。 | 阿里用户聚类或图片分割 | [LC200 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |
-| 给定单链表，反转整个链表。面试常问：k组分段翻转（LC25）。 | 阿里日志链表处理 | [LC206 反转链表](https://leetcode.cn/problems/reverse-linked-list/) |
-| 给定课程和先修关系，判断是否能完成（无环）。面试常问：返回顺序（LC210）。 | 阿里项目依赖管理 | [LC207 课程表](https://leetcode.cn/problems/course-schedule/) |
-| 给定数组，找出第K大元素。面试常问：实时流处理。 | 阿里热搜实时排名 | [LC215 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) |
-| 给定二叉树和两个节点，找最近公共祖先。面试常问：多节点LCA预处理。 | 阿里组织架构查询 | [LC236 二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) |
-| 给定数组，计算每个元素除自身外的乘积（无除法）。面试常问：O(1)空间优化。 | 阿里用户行为权重统计 | [LC238 除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/) |
-| 给定数组和窗口大小k，求每个窗口的最大值。面试常问：窗口中位数（LC480）。 | 阿里订单价格滑动分析 | [LC239 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) |
-| 给定面额数组和总金额，求最少硬币数。面试常问：完全背包变体。 | 阿里资源分配模拟 | [LC322 零钱兑换](https://leetcode.cn/problems/coin-change/) |
-| 给定正整数数组，判断是否能分割成两个等和子集。面试常问：0/1背包扩展。 | 阿里流量均衡分流 | [LC416 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) |
-| 给定二叉树，计算最长路径（直径）。面试常问：平衡树检查。 | 阿里决策树结构分析 | [LC543 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/) |
-| 给定两棵二叉树，按节点值合并（非空相加）。面试常问：处理空节点。 | 阿里用户画像数据融合 | [LC617 合并两棵二叉树](https://leetcode.cn/problems/merge-two-binary-trees/) |
-| 给定字符串，计数所有回文子串数量。面试常问：奇偶中心扩展。 | 阿里评论情感文本分析 | [LC647 回文子串](https://leetcode.cn/problems/palindromic-substrings/) |
-| 给定有序数组和目标值，实现二分查找。面试常问：旋转数组偏移（LC33）。 | 阿里商品ID有序查询 | [LC704 二分查找](https://leetcode.cn/problems/binary-search/) |
-| 给定单链表，找中间节点。面试常问：奇偶长度处理。 | 阿里分页链表操作 | [LC876 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) |
-| 给定天数数组和票价，求最低旅行成本。面试常问：日程约束优化。 | 阿里员工出差路径规划 | [LC983 最低票价](https://leetcode.cn/problems/minimum-cost-for-tickets/) |
-| 给定成本数组，贪心分配两城市最小总成本。面试常问：多城市扩展。 | 阿里多地调度资源分配 | [LC1029 两城市之间最优路径](https://leetcode.cn/problems/two-city-scheduling/) |
-| 给定两个字符串，求最长公共子序列长度。面试常问：编辑距离相似度。 | 阿里商品描述序列匹配 | [LC1143 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/) |
-| 实现LRU缓存，支持get/put O(1)操作。面试常问：LFU频率变体（LC460）。 | 阿里淘宝热搜缓存设计 | [LC146 LRU缓存机制](https://leetcode.cn/problems/lru-cache/) |
-| 给定整数数组，求连续子数组的最大乘积。面试常问：负数边界处理。 | 阿里连续收益乘积优化 | [LC152 乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/) |
 
 ## 腾讯
 ### 出题偏好
@@ -115,30 +46,6 @@
   - 客户端（e.g., 微信客户端、腾讯视频）：数组/字符串/链表（38%），偏「内存与性能优化」（如 O(1) 空间的链表去重），业务场景如本地视频缓存清理、聊天记录搜索匹配、界面滑动流畅性优化。
   - 游戏开发岗：动态规划/图/数学（40%），核心考察「场景化算法设计」（如游戏地图寻路的 A* 算法变体、角色技能伤害计算的数学模型），适配游戏实时交互场景。
 
-### 改编题目
-| 改编描述 | 业务场景 | LeetCode原题 |
-|----------|----------|--------------|
-| 给定数组，求子数组最大和。面试常问：k长子数组变体。 | 腾讯游戏分数连续计算 | [LC53 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) |
-| 给定链表，反转整个链表。面试常问：k组翻转。 | 腾讯日志链路处理 | [LC206 反转链表](https://leetcode.cn/problems/reverse-linked-list/) |
-| 给定点数组，计算直线上最多点数（斜率哈希）。面试常问：重合点处理。 | 腾讯游戏坐标碰撞检测 | [LC149 直线上最多的点数](https://leetcode.cn/problems/max-points-on-a-line/) |
-| 给定点数组和K，找原点最近K个点（欧氏距离）。面试常问：优先队列。 | 腾讯推荐KNN搜索 | [LC973 K 个最近的点](https://leetcode.cn/problems/k-closest-points-to-origin/) |
-| 给定字符串，生成所有有效括号组合。面试常问：n=10边界。 | 腾讯配置生成 | [LC22 括号生成](https://leetcode.cn/problems/generate-parentheses/) |
-| 给定数组和目标，求两数之和索引。面试常问：三数扩展。 | 腾讯支付双交易匹配 | [LC1 两数之和](https://leetcode.cn/problems/two-sum/) |
-| 给定旋转数组，搜索目标。面试常问：重复元素（LC81）。 | 腾讯ID列表查询 | [LC33 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) |
-| 给定0/1网格，统计岛屿数量。面试常问：最大面积（LC695）。 | 腾讯地图聚类 | [LC200 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |
-| 给定数组，找出第K大元素。面试常问：实时流。 | 腾讯热搜排名 | [LC215 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) |
-| 给定区间数组，合并重叠区间。面试常问：多区间排序。 | 腾讯会议时间合并 | [LC56 合并区间](https://leetcode.cn/problems/merge-intervals/) |
-| 给定字符串，计算编辑距离。面试常问：DP空间优化。 | 腾讯文本相似匹配 | [LC72 编辑距离](https://leetcode.cn/problems/edit-distance/) |
-| 给定数组，求除自身外乘积（无除法）。面试常问：O(1)空间。 | 腾讯权重统计 | [LC238 除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/) |
-| 给定数组和k，求窗口最大值。面试常问：中位数（LC480）。 | 腾讯滑动订单分析 | [LC239 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) |
-| 给定面额和金额，求最少硬币数。面试常问：完全背包。 | 腾讯支付分配 | [LC322 零钱兑换](https://leetcode.cn/problems/coin-change/) |
-| 给定数组，判断等和子集。面试常问：0/1背包。 | 腾讯流量分流 | [LC416 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) |
-| 给定二叉树，计算直径。面试常问：平衡检查。 | 腾讯树分析 | [LC543 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/) |
-| 给定两棵树，节点值合并。面试常问：空节点处理。 | 腾讯数据融合 | [LC617 合并两棵二叉树](https://leetcode.cn/problems/merge-two-binary-trees/) |
-| 给定字符串，计数回文子串。面试常问：奇偶扩展。 | 腾讯文本分析 | [LC647 回文子串](https://leetcode.cn/problems/palindromic-substrings/) |
-| 给定有序数组，实施二分查找。面试常问：旋转偏移（LC33）。 | 腾讯商品查询 | [LC704 二分查找](https://leetcode.cn/problems/binary-search/) |
-| 给定链表，找中间节点。面试常问：奇偶处理。 | 腾讯分页操作 | [LC876 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) |
-
 ## 美团
 
 ### 出题偏好
@@ -151,31 +58,8 @@
   - 算法岗（搜索/推荐/广告）：DP/贪心/机器学习融合（45%），侧重「业务指标驱动的算法设计」（如基于用户消费轨迹的序列 DP 推荐变体），融合特征工程（如外卖订单的时间/距离特征融入贪心状态），常考察「算法优化与商业指标的关联」（如如何用模型降低用户取消订单率）。
   - 客户端（e.g., 美团 App、大众点评）：数组/字符串/链表（35%），偏「轻量场景的高效实现」（如 O(1) 空间的本地地址解析），高频题涵盖「字符串匹配的前缀树优化」「链表的局部反转」等，业务场景如本地订单缓存的增量同步、商家地址的快速检索匹配、滑动加载性能调优。
   - 数据开发/数仓：图/DP/并行处理（42%），核心考察「海量业务数据的处理效率」（如亿级外卖订单的时序统计变体），适配 Hive/Spark 框架，业务场景如跨区域订单数据的实时聚合、用户消费行为的离线分析建模、商家营收数据的去重与关联。
- ### 改编题目
-| 改编描述 | 业务场景 | LeetCode原题 |
-|----------|----------|--------------|
-| 给定数组，求子数组最大和。面试常问：k长子数组变体。 | 美团外卖连续订单最大收益计算 | [LC53 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) |
-| 给定数组和目标，求两数之和索引。面试常问：三数扩展。 | 美团支付双交易匹配 | [LC1 两数之和](https://leetcode.cn/problems/two-sum/) |
-| 给定0/1网格，统计岛屿数量。面试常问：最大面积（LC695）。 | 美团商家地图聚类 | [LC200 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |
-| 给定数组，找出第K大元素。面试常问：实时流。 | 美团热搜商品排名 | [LC215 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) |
-| 给定区间数组，合并重叠区间。面试常问：多区间排序。 | 美团骑手时间调度合并 | [LC56 合并区间](https://leetcode.cn/problems/merge-intervals/) |
-| 给定面额和金额，求最少硬币数。面试常问：完全背包。 | 美团支付最小手续费分配 | [LC322 零钱兑换](https://leetcode.cn/problems/coin-change/) |
-| 给定数组，判断等和子集。面试常问：0/1背包。 | 美团订单流量等分流 | [LC416 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) |
-| 给定二叉树，计算直径。面试常问：平衡检查。 | 美团配送网络树分析 | [LC543 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/) |
-| 给定字符串，计数回文子串。面试常问：奇偶扩展。 | 美团地址文本相似匹配 | [LC647 回文子串](https://leetcode.cn/problems/palindromic-substrings/) |
-| 给定有序数组，实施二分查找。面试常问：旋转偏移（LC33）。 | 美团商品价格查询 | [LC704 二分查找](https://leetcode.cn/problems/binary-search/) |
-| 给定数组，求除自身外乘积（无除法）。面试常问：O(1)空间。 | 美团商家权重统计 | [LC238 除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/) |
-| 给定数组和k，求窗口最大值。面试常问：中位数（LC480）。 | 美团滑动订单评分分析 | [LC239 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) |
-| 给定旋转数组，搜索目标。面试常问：重复元素（LC81）。 | 美团循环菜单ID查询 | [LC33 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) |
-| 给定字符串，生成所有有效括号组合。面试常问：n=10边界。 | 美团配置参数生成 | [LC22 括号生成](https://leetcode.cn/problems/generate-parentheses/) |
-| 给定字符串，计算编辑距离。面试常问：DP空间优化。 | 美团搜索关键词补全 | [LC72 编辑距离](https://leetcode.cn/problems/edit-distance/) |
-| 给定点数组和K，找原点最近K个点（欧氏距离）。面试常问：优先队列。 | 美团附近商家KNN推荐 | [LC973 K 个最近的点](https://leetcode.cn/problems/k-closest-points-to-origin/) |
-| 给定点数组，计算直线上最多点数（斜率哈希）。面试常问：重合点处理。 | 美团骑手路径碰撞检测 | [LC149 直线上最多的点数](https://leetcode.cn/problems/max-points-on-a-line/) |
-| 给定链表，反转整个链表。面试常问：k组翻转。 | 美团聊天记录链路处理 | [LC206 反转链表](https://leetcode.cn/problems/reverse-linked-list/) |
-| 给定链表，找中间节点。面试常问：奇偶处理。 | 美团订单列表分页 | [LC876 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) |
-| 给定m x n网格，计算不同路径数。面试常问：障碍物变体（LC62）。 | 美团骑手多路径规划 | [LC63 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) |
   
-### 百度
+## 百度
 ### 出题偏好
 - **整体偏好**：
 百度算法面试/笔试以「LeetCode 经典题变体 + 大模型与核心业务深度融合」为核心，既考察基础算法的严谨实现与优化能力，更注重算法在搜索引擎、推荐系统、大模型应用等核心场景的落地适配（如查询优化、广告排序）。笔试时长通常 2 小时，题量因岗位差异明显：算法岗为「选择题 + 4-5 道编程题」，后端岗为「选择题 + 3 道编程题」，客户端/数据岗为「选择题 + 2-4 道编程题」，整体难度呈递进式分布（如前 1-2 题基础 Easy，最后 1-2 题达 Medium-Hard 难度）；技术一面聚焦「算法正确性与边界处理」，要求手撕代码并分析极端案例（如空输入或海量数据下的时空复杂度），二面侧重「AI 融合场景」，三面引入「系统架构与业务指标量化」（如算法如何提升搜索召回率或降低模型延迟）。
@@ -186,23 +70,9 @@
   - 算法岗（搜索/推荐/广告）：DP/字符串/ML 融合（42%），侧重「业务指标驱动的模型设计」（如基于用户查询轨迹的字符串 DP 推荐变体），融合特征工程（如搜索日志的时间/语义特征融入二分状态），常考察「算法与 KPI 的量化关联」（如如何用模型提升广告点击率或降低搜索超时）。
   - 客户端（e.g., 百度 App、地图导航）：数组/字符串/链表（35%），偏「高效移动端实现」（如 O(1) 空间的本地查询解析），高频题涵盖「数组双指针的滑动匹配」「链表的条件反转」等，业务场景如 App 搜索缓存的增量更新、位置数据的快速过滤、UI 渲染的性能瓶颈调优。
   - 数据开发/数仓：图/DP/并行计算（40%），核心考察「PB 级数据的处理鲁棒性」（如亿级搜索日志的图谱分析变体），适配 Flink/PaddlePaddle 框架，业务场景如跨域查询数据的实时聚合、用户行为轨迹的离线建模、广告曝光数据的去重与因果分析。
- 
-### 改编题目
 
-| 改编描述 | 业务场景 | LeetCode原题 |
-|----------|----------|--------------|
-| 实现Trie前缀树，支持insert/search/startsWith操作，总调用≤3*10^4，word/prefix长度≤2000（仅小写字母）。面试常问：添加delete(word)变体，删除后验证前缀匹配不泄露已删词；边界：空字符串/重复插入。优化：每个节点children数组26（a-z），is_end标志。示例：insert("apple")后search("app")返回false，但startsWith("app")返回true。 | 百度搜索自动补全，热词实时插入/查询/删除，防泄露隐私数据 | [LC208 实现 Trie (前缀树)](https://leetcode.cn/problems/implement-trie-prefix-tree/) |
-| 给定数组nums和target，返回索引i/j使nums[i]+nums[j]=target（无重复）。面试常问：扩展三数之和变体，nums长度≤10^4，目标sum=0，去重用排序+双指针；边界：全负数/全零。优化：哈希O(n) vs 排序O(n log n)。示例：nums=[-1,0,1,2,-1,-4]，返回[-1,0,1]。 | 百度广告关键词匹配，三关键词组合优化投放，避免重复bid | [LC1 两数之和](https://leetcode.cn/problems/two-sum/) |
-| 给定高度数组height，计算陷水总量（每个位置min(left_max,right_max)-height[i]）。面试常问：单调栈变体处理峰值，n≤10^5；边界：单元素/递增。优化：栈O(n) vs 双指针O(n)。示例：height=[0,1,0,2,1,0,1,3,2,1,2,1]，总量6。 | 百度流量峰值模拟，服务器负载陷阱检测，预测瓶颈 | [LC42 接雨水](https://leetcode.cn/problems/trapping-rain-water/) |
-| 给定数组prices，单次买卖最大利润。面试常问：多交易+k冷却期变体（k=1天），n≤10^4；边界：单日/全降。优化：DP状态[天][持股][冷却] O(n)。示例：prices=[7,1,5,3,6,4]，利润5（1买5卖）。 | 百度广告竞价模拟，多轮ROI优化，冷却防刷单 | [LC121 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) |
-| 给定字符串s，找最长无重复子串长度。面试常问：最多K重复变体（K=2），n≤10^4，用滑动窗口计数器；边界：全重复/空串。优化：哈希set/sliding O(n)。示例：s="abcabcbb"，长度3("abc")。 | 百度搜索查询无重复关键词提取，K=2容忍拼写变体 | [LC3 最长无重复字符的子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) |
-| 给定数组nums，找连续子数组最大和。面试常问：固定k长度变体+负值剪枝，n≤10^5；边界：全负。优化：Kadane O(n) vs 预和O(n)。示例：nums=[-2,1,-3,4,-1,2,1,-5,4]，最大6([4,-1,2,1])。 | 百度连续查询相关度计算，长尾词k=5窗口召回 | [LC53 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) |
-| 实现LRU缓存，capacity≤10^4，key/value≤10^9，O(1)get/put。面试常问：LFU频率变体，双哈希+双链表；边界：capacity=0/全满。优化：get后移尾。示例：["LRUCache","put","put","get","put"] [[2], [1,1], [2,2], [1], [3,3]]，get(1)=1。 | 百度热搜结果缓存，LFU驱逐低频词，提升命中率 | [LC146 LRU缓存机制](https://leetcode.cn/problems/lru-cache/) |
-| 给定0/1网格grid，统计岛屿数（4连通）。面试常问：最大岛屿面积变体+淹没边界（翻转0/1），m,n≤200；边界：全陆/全水。优化：DFS/BFS O(mn)。示例：grid=[["1","1"],["0","1"]]，岛屿1，面积3。 | 百度地图POI聚类，动态淹没边界识别热点 | [LC200 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |
-| 给定数组nums，找第K大元素。面试常问：实时流变体，用heap维护，n≤10^5，K≤n；边界：K=1/n。优化：快速选择O(n) vs heap O(n log k)。示例：nums=[3,2,1,5,6,4], K=2，返回5。 | 百度热搜实时Top K排名，流更新延迟<100ms | [LC215 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) |
-| 给定区间intervals，合并重叠。面试常问：插入新区间变体+优先级排序，n≤10^4；边界：无重叠/全嵌套。优化：排序O(n log n)。示例：intervals=[[1,3],[2,6],[8,10],[15,18]]，合并[[1,6],[8,10],[15,18]]。 | 百度地图路径时间重叠，插入实时路况优先高拥堵 | [LC56 合并区间](https://leetcode.cn/problems/merge-intervals/) |
 
-### 京东 
+## 京东 
 ### 出题偏好
 - **整体偏好**：
 京东算法面试/笔试以「LeetCode 高频题 + 电商/物流业务场景融合」为核心，既考察基础数据结构与算法的工程实现与优化能力（如复杂度分析与边界测试），更注重算法在京东商城推荐、库存调度、实时物流等核心场景的落地（如商品排序、路径优化）。笔试时长通常 120 分钟，题量因岗位差异明显：算法岗为「选择题 + 3-4 道编程题」，后端岗为「选择题 + 3 道编程题」，客户端/数据岗为「选择题 + 2-3 道编程题」，难度渐进式（前 1-2 题 Easy，最后 1-2 题 Medium-Hard）；技术一面聚焦「代码正确性与海量数据优化」（如 O(n) 时间在亿级订单下的适用），二面侧重「业务适配与扩展」（如算法如何提升物流效率），三面引入「系统设计与量化指标」（如分布式图算法对配送延迟的影响）。
@@ -215,7 +85,7 @@
   - 数据开发/数仓：图/DP/并行计算（39%），核心考察「PB 级数据的处理鲁棒性」（如亿级订单日志的图谱分析变体），适配 Flink/Spark 框架，业务场景如跨域商品数据的实时聚合、用户偏好轨迹的离线建模、促销投放数据的去重与 A/B 测试分析。
  
 
-### 华为
+## 华为
 ### 出题偏好
 - **整体偏好**：
 华为算法面试/笔试以「LeetCode 高频题 + 通信/云/AI 系统场景融合」为核心，既考察经典算法的工程实现与硬件优化（如时间/空间复杂度在嵌入式环境下的适配），更注重算法在5G/芯片设计、云存储、AI边缘计算等核心场景的落地（如信号排序、网络拓扑预测）。笔试时长通常 120 分钟，题量因岗位差异明显：算法岗为「选择题 + 4 道编程题」，后端岗为「选择题 + 3 道编程题」，客户端/无线岗为「选择题 + 2-3 道编程题」，难度递进（前 1-2 题 Easy-Medium，最后 1 题 Hard）；技术一面强调「代码正确性与边界鲁棒性」，要求手撕代码并分析低功耗设备下的优化（如 O(1) 空间在亿级信号数据中的应用），二面聚焦「系统融合与扩展」（如算法如何提升5G延迟），三面引入「硬件/分布式设计与量化评估」（如算法在鲲鹏芯片上的并行执行对吞吐量的影响）。
