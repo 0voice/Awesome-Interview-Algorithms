@@ -13,7 +13,7 @@
 - 本README题目均使用 **LeetCode原题名称+链接**，便于直接刷题；链接中标注「剑指Offer」的题目，对应 LeetCode LCR 变体题。
 - **刷题建议**：优先刷**LeetCode hot100**、**剑指offer**、本README中**频率为高的题目**，覆盖80%大厂考点。
 - **刷剑指Offer原题**：详见下方「剑指Offer刷题指南」。
-- **了解大厂出题偏好和改编题**：可访问[出题偏好和改编题](https://github.com/0voice/Awesome-BigTech-Algorithms/blob/main/%E5%87%BA%E9%A2%98%E5%81%8F%E5%A5%BD%E4%B8%8E%E6%94%B9%E7%BC%96%E9%A2%98/README.md)文件夹。
+- **了解大厂出题偏好和改编题**：可访问[variants](https://github.com/0voice/Awesome-BigTech-Algorithms/blob/main/variants/README.md)文件夹。
 - **自行刷题**：参考下方[刷题平台](#-刷题平台)。
 
 ### 剑指Offer刷题指南
