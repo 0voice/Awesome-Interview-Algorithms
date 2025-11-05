@@ -4,7 +4,6 @@
 
 ## 🧭 快速导航
 [大厂算法题](#-大厂算法题)  
-[LeetCode改编题](LeetCode-Variants/README.md)  
 [刷题平台](#-刷题平台)  
 [资源说明](#-资源说明)  
 
@@ -14,7 +13,7 @@
 - 本README题目均使用 **LeetCode原题名称+链接**，便于直接刷题；链接中标注「剑指Offer」的题目，对应 LeetCode LCR 变体题。
 - **刷题建议**：优先刷**LeetCode hot100**、**剑指offer**、本README中**频率为高的题目**，覆盖80%大厂考点。
 - **刷剑指Offer原题**：详见下方「剑指Offer刷题指南」。
-- **查看大厂改编真题**：可访问[LeetCode-Variants](LeetCode-Variants/README.md)，包含 LeetCode 原题变体（常见改动：增加业务场景）及大厂出题偏好。
+- **了解大厂出题偏好**：可访问[Question Preference](https://github.com/0voice/Awesome-BigTech-Algorithms/blob/main/Question%20Preference/README.md)。
 - **自行刷题**：参考下方[刷题平台](#-刷题平台)。
 
 ### 剑指Offer刷题指南
