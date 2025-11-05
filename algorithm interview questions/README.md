@@ -134,3 +134,40 @@
 | 给定字符串，计数回文子串。面试常问：奇偶扩展。 | 腾讯文本分析 | [LC647 回文子串](https://leetcode.cn/problems/palindromic-substrings/) |
 | 给定有序数组，实施二分查找。面试常问：旋转偏移（LC33）。 | 腾讯商品查询 | [LC704 二分查找](https://leetcode.cn/problems/binary-search/) |
 | 给定链表，找中间节点。面试常问：奇偶处理。 | 腾讯分页操作 | [LC876 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) |
+
+## 美团
+
+### 出题偏好
+- **整体偏好**：
+美团算法面试/笔试以「LeetCode 高频题落地适配 + 本地生活业务深度绑定」为核心，既强调基础算法的工程化实现能力，更注重算法与外卖、到店、即时零售等核心业务的结合度（如配送路径优化、商家推荐排序）。笔试时长通常 2 小时，题量因岗位差异显著：算法岗为「选择题 + 5 道编程题」，后端岗为「选择题 + 3 道编程题」，客户端/数据岗为「选择题 + 2-3 道编程题」，整体难度呈梯度分布（如前 1-2 题偏基础，最后 1 题达 Medium-Hard 难度）；技术一面聚焦「算法实现与复杂度分析」，要求手撕代码并说明时空开销（如 O(n) 时间 + O(1) 空间解决链表问题），二面侧重「业务场景拆解」，三面会加入「系统方案与商业指标关联」（如算法优化如何降低外卖配送超时率）。
+  - **高频主题占比**：贪心（25%）、动态规划（DP）（20%）、图/树（20%）、数组/字符串（20%）、其他（二分/堆/搜索）（15%）。  
+  - **趋势**：大模型技术融合题占比上升（如基于贪心与 Transformer 的推荐排序优化、用 RAG 提升商家信息覆盖率），本地生活场景的「算法-商业指标联动」考察强化（如优化 CTR 或降低司机空驶率），但经典基础（如贪心证明正确性、DP 状态转移）的工程落地能力仍是核心评判标准。
+- **岗位偏好：**
+  - 后端（e.g., 外卖系统、酒店预订、美团云）：贪心/DP/图（40%），变体多为「多约束优化问题」（如带时间窗的配送路径规划变体），高频题包括「最短路径的多权重适配」「子数组和的最大差值」等，业务场景如骑手派单调度、库存动态更新、云资源弹性扩容策略设计。
+  - 算法岗（搜索/推荐/广告）：DP/贪心/机器学习融合（45%），侧重「业务指标驱动的算法设计」（如基于用户消费轨迹的序列 DP 推荐变体），融合特征工程（如外卖订单的时间/距离特征融入贪心状态），常考察「算法优化与商业指标的关联」（如如何用模型降低用户取消订单率）。
+  - 客户端（e.g., 美团 App、大众点评）：数组/字符串/链表（35%），偏「轻量场景的高效实现」（如 O(1) 空间的本地地址解析），高频题涵盖「字符串匹配的前缀树优化」「链表的局部反转」等，业务场景如本地订单缓存的增量同步、商家地址的快速检索匹配、滑动加载性能调优。
+  - 数据开发/数仓：图/DP/并行处理（42%），核心考察「海量业务数据的处理效率」（如亿级外卖订单的时序统计变体），适配 Hive/Spark 框架，业务场景如跨区域订单数据的实时聚合、用户消费行为的离线分析建模、商家营收数据的去重与关联。
+ ### 改编题目
+| 改编描述 | 业务场景 | LeetCode原题 |
+|----------|----------|--------------|
+| 给定数组，求子数组最大和。面试常问：k长子数组变体。 | 美团外卖连续订单最大收益计算 | [LC53 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) |
+| 给定数组和目标，求两数之和索引。面试常问：三数扩展。 | 美团支付双交易匹配 | [LC1 两数之和](https://leetcode.cn/problems/two-sum/) |
+| 给定0/1网格，统计岛屿数量。面试常问：最大面积（LC695）。 | 美团商家地图聚类 | [LC200 岛屿数量](https://leetcode.cn/problems/number-of-islands/) |
+| 给定数组，找出第K大元素。面试常问：实时流。 | 美团热搜商品排名 | [LC215 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) |
+| 给定区间数组，合并重叠区间。面试常问：多区间排序。 | 美团骑手时间调度合并 | [LC56 合并区间](https://leetcode.cn/problems/merge-intervals/) |
+| 给定面额和金额，求最少硬币数。面试常问：完全背包。 | 美团支付最小手续费分配 | [LC322 零钱兑换](https://leetcode.cn/problems/coin-change/) |
+| 给定数组，判断等和子集。面试常问：0/1背包。 | 美团订单流量等分流 | [LC416 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) |
+| 给定二叉树，计算直径。面试常问：平衡检查。 | 美团配送网络树分析 | [LC543 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/) |
+| 给定字符串，计数回文子串。面试常问：奇偶扩展。 | 美团地址文本相似匹配 | [LC647 回文子串](https://leetcode.cn/problems/palindromic-substrings/) |
+| 给定有序数组，实施二分查找。面试常问：旋转偏移（LC33）。 | 美团商品价格查询 | [LC704 二分查找](https://leetcode.cn/problems/binary-search/) |
+| 给定数组，求除自身外乘积（无除法）。面试常问：O(1)空间。 | 美团商家权重统计 | [LC238 除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/) |
+| 给定数组和k，求窗口最大值。面试常问：中位数（LC480）。 | 美团滑动订单评分分析 | [LC239 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) |
+| 给定旋转数组，搜索目标。面试常问：重复元素（LC81）。 | 美团循环菜单ID查询 | [LC33 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) |
+| 给定字符串，生成所有有效括号组合。面试常问：n=10边界。 | 美团配置参数生成 | [LC22 括号生成](https://leetcode.cn/problems/generate-parentheses/) |
+| 给定字符串，计算编辑距离。面试常问：DP空间优化。 | 美团搜索关键词补全 | [LC72 编辑距离](https://leetcode.cn/problems/edit-distance/) |
+| 给定点数组和K，找原点最近K个点（欧氏距离）。面试常问：优先队列。 | 美团附近商家KNN推荐 | [LC973 K 个最近的点](https://leetcode.cn/problems/k-closest-points-to-origin/) |
+| 给定点数组，计算直线上最多点数（斜率哈希）。面试常问：重合点处理。 | 美团骑手路径碰撞检测 | [LC149 直线上最多的点数](https://leetcode.cn/problems/max-points-on-a-line/) |
+| 给定链表，反转整个链表。面试常问：k组翻转。 | 美团聊天记录链路处理 | [LC206 反转链表](https://leetcode.cn/problems/reverse-linked-list/) |
+| 给定链表，找中间节点。面试常问：奇偶处理。 | 美团订单列表分页 | [LC876 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) |
+| 给定m x n网格，计算不同路径数。面试常问：障碍物变体（LC62）。 | 美团骑手多路径规划 | [LC63 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) |
+  
