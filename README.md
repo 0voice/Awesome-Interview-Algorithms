@@ -1,7 +1,6 @@
 <h1 align="center">📁 2025年最新大厂算法题合集</h1> 
 本仓库是一个精选的算法题合集，专注于大厂面试、校招笔试和热门刷题平台的经典题目。<br>  
 无论你是在校生准备秋招/春招，还是职场开发者冲刺offer，这里汇集了近几年top大厂的算法挑战，帮助你系统掌握数据结构与算法核心技能。
-![GitHub Repo stars](https://img.shields.io/github/stars/0voice/Awesome-BigTech-Algorithms)
 
 ## 🧭 快速导航
 [大厂算法题](#-大厂算法题)  
