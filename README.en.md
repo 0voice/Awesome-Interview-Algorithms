@@ -1,10 +1,8 @@
 # 📁 2025 Latest Big Tech Algorithm Questions Collection
 
+A curated list of high-frequency LeetCode problems for Big Tech interviews✨
+
 [中文版 README](README.md)
-
-This repository is a curated collection of algorithm problems, focusing on classic questions from big tech interviews, campus recruitment written tests, and popular practice platforms.
-
-Whether you're a student preparing for fall or spring recruitment, or a working developer aiming for an offer, this collection gathers algorithmic challenges from top big tech companies in recent years to help you systematically master core data structures and algorithms skills. ✨
 
 ## 🧭 Quick Navigation
 [Big Tech Algorithm Questions](#-big-tech-algorithm-questions)  
@@ -15,15 +13,10 @@ Whether you're a student preparing for fall or spring recruitment, or a working 
 ## 🧠 Big Tech Algorithm Questions
 
 ### Notes:
-- All questions in this README use **LeetCode original problem names + links** for direct practice; questions marked with "Sword Finger Offer" correspond to LeetCode LCR variants.
-- **Practice Suggestions**: Prioritize **LeetCode Hot 100**, **Sword Finger Offer**, and questions in this README with **High frequency**, covering 80% of big tech exam points.
-- **Practice Sword Finger Offer Original Questions**: See the "Sword Finger Offer Practice Guide" below.
+- All questions in this README use **LeetCode original problem names + links** for direct practice.
+- **Practice Suggestions**: Prioritize **LeetCode Hot 100**, and questions in this README with **High frequency**, covering 80% of big tech exam points.
 - **Understand Big Tech Question Preferences and Variants**: Visit the [variants](https://github.com/0voice/Awesome-BigTech-Algorithms/blob/main/variants/README.md) folder.
 - **Self-Practice**: Refer to the [Practice Platforms](#-practice-platforms) below.
-
-### Sword Finger Offer Practice Guide
-- [coding-interview](https://interview.doocs.org/coding-interview/)
-- [NowCoder](https://www.nowcoder.com/exam/oj/ta?page=1&tpId=13&type=13)
 
 ### Big Tech Practice Navigation
 - [ByteDance](#bytedance)
@@ -258,12 +251,6 @@ Whether you're a student preparing for fall or spring recruitment, or a working 
 |--------------|------|------------|-----------|--------------|
 | Majority Element | Array, Divide and Conquer | Easy | High | [LeetCode 169](https://leetcode.com/problems/majority-element/) |
 | Complex Number Multiplication | Math, String | Easy | Medium | [LeetCode 537](https://leetcode.com/problems/complex-number-multiplication/) |
-| Replace Spaces | String, Two Pointers | Easy | High | [Sword Finger Offer 05](https://leetcode.com/problems/ti-huan-kong-ge-lcof/) |
-| Fibonacci Number | Dynamic Programming | Easy | High | [Sword Finger Offer 10 - I](https://leetcode.com/problems/fei-bo-na-qi-shu-lie-lcof/) |
-| Path in Matrix | Depth-First Search, Backtracking | Medium | High | [Sword Finger Offer 12](https://leetcode.com/problems/ju-zhen-zhong-de-lu-jing-lcof/) |
-| Robot's Range of Motion | Depth-First Search, Breadth-First Search | Medium | High | [Sword Finger Offer 13](https://leetcode.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) |
-| Cut Rope | Dynamic Programming, Math | Medium | High | [Sword Finger Offer 14](https://leetcode.com/problems/jian-sheng-zi-lcof/) |
-| Reverse Pairs in Array | Merge Sort, Array | Medium | High | [Sword Finger Offer 51](https://leetcode.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |
 | Path Sum III | Tree, Depth-First Search | Medium | High | [LeetCode 437](https://leetcode.com/problems/path-sum-iii/) |
 | Maximum Product Subarray | Array, Dynamic Programming | Medium | High | [LeetCode 152](https://leetcode.com/problems/maximum-product-subarray/) |
 | Sort Array By Parity II | Array, Two Pointers | Medium | High | [LeetCode 922](https://leetcode.com/problems/sort-array-by-parity-ii/) |
@@ -274,17 +261,6 @@ Whether you're a student preparing for fall or spring recruitment, or a working 
 | Design Linked List | Design, Linked List | Medium | High | [LeetCode 707](https://leetcode.com/problems/design-linked-list/) |
 | Push Dominoes | Simulation, Queue | Medium | Medium | [LeetCode 838](https://leetcode.com/problems/push-dominoes/) |
 | Spiral Matrix II | Array, Math | Medium | High | [LeetCode 59](https://leetcode.com/problems/spiral-matrix-ii/) |
-| First Character That Appears Only Once | String, Hash Table | Medium | High | [Sword Finger Offer 50](https://leetcode.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) |
-| Two Numbers with Sum S | Array, Hash Table | Medium | High | [Sword Finger Offer 57](https://leetcode.com/problems/he-wei-s-de-liang-ge-shu-zi-lcof/) |
-| Sliding Window Maximum | Queue, Sliding Window | Medium | High | [Sword Finger Offer 59 - I](https://leetcode.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/) |
-| Last Remaining in Circle | Array, Math | Medium | High | [Sword Finger Offer 62](https://leetcode.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) |
-| Construct Product Matrix | Array, Prefix Sum | Medium | High | [Sword Finger Offer 66](https://leetcode.com/problems/gou-jian-cheng-ji-shu-zu-lcof/) |
-| Arrange Array to Smallest Number | Sorting, String | Medium | High | [Sword Finger Offer 45](https://leetcode.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/) |
-| Translate Numbers to Strings | Dynamic Programming | Medium | High | [Sword Finger Offer 46](https://leetcode.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) |
-| Maximum Value of Gifts | Dynamic Programming, Matrix | Medium | High | [Sword Finger Offer 47](https://leetcode.com/problems/li-wu-de-zui-da-jie-zhi-lcof/) |
-| Numbers Appearing Odd Times in Array | Bit Manipulation, Array | Medium | High | [Sword Finger Offer 56 - I](https://leetcode.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/) |
-| Kth Largest Node in BST | Tree, Depth-First Search | Medium | High | [Sword Finger Offer 54](https://leetcode.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) |
-| Best Time to Buy and Sell Stock | Array, Dynamic Programming | Medium | High | [Sword Finger Offer 63](https://leetcode.com/problems/gu-piao-de-zui-da-li-run-lcof/) |
 | Max Area of Island | Depth-First Search, Breadth-First Search | Medium | Low | [LeetCode 695](https://leetcode.com/problems/max-area-of-island/) |
 | Course Schedule II | Graph, Depth-First Search | Medium | Medium | [LeetCode 210](https://leetcode.com/problems/course-schedule-ii/) |
 | Partition List | Linked List, Two Pointers | Medium | Low | [LeetCode 86](https://leetcode.com/problems/partition-list/) |
@@ -317,10 +293,6 @@ Whether you're a student preparing for fall or spring recruitment, or a working 
 | Maximum Subarray | Array, Divide and Conquer, Dynamic Programming | Easy | High | [LeetCode 53](https://leetcode.com/problems/maximum-subarray/) |
 | Reverse Linked List | Linked List, Recursion | Easy | High | [LeetCode 206](https://leetcode.com/problems/reverse-linked-list/) |
 | Merge Two Sorted Lists | Linked List, Recursion | Easy | High | [LeetCode 21](https://leetcode.com/problems/merge-two-sorted-lists/) |
-| Path in Matrix | Depth-First Search, Backtracking | Medium | High | [Sword Finger Offer 12](https://leetcode.com/problems/ju-zhen-zhong-de-lu-jing-lcof/) |
-| Robot's Range of Motion | Depth-First Search, Breadth-First Search | Medium | High | [Sword Finger Offer 13](https://leetcode.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) |
-| Cut Rope | Dynamic Programming, Math | Medium | High | [Sword Finger Offer 14](https://leetcode.com/problems/jian-sheng-zi-lcof/) |
-| Reverse Pairs in Array | Merge Sort, Array | Medium | High | [Sword Finger Offer 51](https://leetcode.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |
 | Path Sum III | Tree, Depth-First Search | Medium | High | [LeetCode 437](https://leetcode.com/problems/path-sum-iii/) |
 | Maximum Product Subarray | Array, Dynamic Programming | Medium | High | [LeetCode 152](https://leetcode.com/problems/maximum-product-subarray/) |
 | Sort Array By Parity II | Array, Two Pointers | Medium | Medium | [LeetCode 922](https://leetcode.com/problems/sort-array-by-parity-ii/) |
@@ -332,7 +304,6 @@ Whether you're a student preparing for fall or spring recruitment, or a working 
 | Push Dominoes | Simulation, Queue | Medium | Medium | [LeetCode 838](https://leetcode.com/problems/push-dominoes/) |
 | Search in Rotated Sorted Array | Array, Binary Search | Medium | High | [LeetCode 33](https://leetcode.com/problems/search-in-rotated-sorted-array/) |
 | Find Minimum in Rotated Sorted Array | Array, Binary Search | Medium | High | [LeetCode 153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
-| Kth Largest Node in BST | Tree, Depth-First Search | Medium | High | [Sword Finger Offer 54](https://leetcode.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) |
 | Search a 2D Matrix | Array, Binary Search | Medium | High | [LeetCode 74](https://leetcode.com/problems/search-a-2d-matrix/) |
 | Longest Substring Without Repeating Characters | Hash Table, String, Sliding Window | Medium | High | [LeetCode 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 | Kth Largest Element in an Array | Array, Heap, Divide and Conquer | Medium | High | [LeetCode 215](https://leetcode.com/problems/kth-largest-element-in-an-array/) |
@@ -379,18 +350,9 @@ Whether you're a student preparing for fall or spring recruitment, or a working 
 |--------------|------|------------|-----------|--------------|
 | Majority Element | Array, Divide and Conquer | Easy | High | [LeetCode 169](https://leetcode.com/problems/majority-element/) |
 | Search Insert Position | Array, Binary Search | Easy | High | [LeetCode 35](https://leetcode.com/problems/search-insert-position/) |
-| Replace Spaces | String, Two Pointers | Easy | High | [Sword Finger Offer 05](https://leetcode.com/problems/ti-huan-kong-ge-lcof/) |
 | Fibonacci Number | Dynamic Programming | Easy | Medium | [LeetCode 509](https://leetcode.com/problems/fibonacci-number/) |
-| Minimum in Rotating Sorted Array | Array, Binary Search | Easy | High | [Sword Finger Offer 11](https://leetcode.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) |
-| Implement Queue using Stacks | Stack, Design | Easy | High | [Sword Finger Offer 09](https://leetcode.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) |
-| Reorder Array so Odd Numbers Front | Array, Two Pointers | Easy | Medium | [Sword Finger Offer 21](https://leetcode.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) |
-| Reverse Linked List | Linked List, Recursion | Easy | High | [Sword Finger Offer 24](https://leetcode.com/problems/fan-zhuan-lian-biao-lcof/) |
 | Valid Parentheses | Stack, String | Easy | High | [LeetCode 20](https://leetcode.com/problems/valid-parentheses/) |
 | Merge Two Sorted Lists | Linked List, Recursion | Easy | High | [LeetCode 21](https://leetcode.com/problems/merge-two-sorted-lists/) |
-| Path in Matrix | Depth-First Search, Backtracking | Medium | High | [Sword Finger Offer 12](https://leetcode.com/problems/ju-zhen-zhong-de-lu-jing-lcof/) |
-| Robot's Range of Motion | Depth-First Search, Breadth-First Search | Medium | High | [Sword Finger Offer 13](https://leetcode.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) |
-| Cut Rope | Dynamic Programming, Math | Medium | High | [Sword Finger Offer 14](https://leetcode.com/problems/jian-sheng-zi-lcof/) |
-| Reverse Pairs in Array | Merge Sort, Array | Medium | Medium | [Sword Finger Offer 51](https://leetcode.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |
 | Path Sum III | Tree, Depth-First Search | Medium | Medium | [LeetCode 437](https://leetcode.com/problems/path-sum-iii/) |
 | Maximum Product Subarray | Array, Dynamic Programming | Medium | Medium | [LeetCode 152](https://leetcode.com/problems/maximum-product-subarray/) |
 | Sort Array By Parity II | Array, Two Pointers | Medium | Medium | [LeetCode 922](https://leetcode.com/problems/sort-array-by-parity-ii/) |
@@ -402,15 +364,6 @@ Whether you're a student preparing for fall or spring recruitment, or a working 
 | Push Dominoes | Simulation, Queue | Medium | Medium | [LeetCode 838](https://leetcode.com/problems/push-dominoes/) |
 | Search in Rotated Sorted Array | Array, Binary Search | Medium | High | [LeetCode 33](https://leetcode.com/problems/search-in-rotated-sorted-array/) |
 | Find Minimum in Rotated Sorted Array | Array, Binary Search | Medium | High | [LeetCode 153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
-| Kth Largest Node in BST | Tree, Depth-First Search | Medium | Medium | [Sword Finger Offer 54](https://leetcode.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) |
-| Tree Substructure | Tree, Depth-First Search | Medium | High | [Sword Finger Offer 26](https://leetcode.com/problems/shu-de-zi-jie-gou-lcof/) |
-| Mirror of Binary Tree | Tree, Recursion | Medium | High | [Sword Finger Offer 27](https://leetcode.com/problems/er-cha-shu-de-jing-xiang-lcof/) |
-| Symmetric Tree | Tree, Recursion | Medium | High | [Sword Finger Offer 28](https://leetcode.com/problems/dui-cheng-de-er-cha-shu-lcof/) |
-| Print Matrix Clockwise | Array, Simulation | Medium | High | [Sword Finger Offer 29](https://leetcode.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/) |
-| Min Stack | Stack, Design | Medium | High | [Sword Finger Offer 30](https://leetcode.com/problems/bao-han-minhan-shu-de-die-dai-lcof/) |
-| Print Binary Tree from Top to Bottom | Tree, Breadth-First Search | Medium | High | [Sword Finger Offer 32 - I](https://leetcode.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/) |
-| Path with Sum in Binary Tree | Tree, Depth-First Search | Medium | Medium | [Sword Finger Offer 34](https://leetcode.com/problems/er-cha-shu-zhong-he-wei-suo-you-de-lu-jing-lcof/) |
-| Copy Complex Linked List | Linked List, Hash Table | Medium | Medium | [Sword Finger Offer 35](https://leetcode.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/) |
 | Longest Substring Without Repeating Characters | Hash Table, String, Sliding Window | Medium | High | [LeetCode 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 | 3Sum | Array, Two Pointers | Medium | High | [LeetCode 15](https://leetcode.com/problems/3sum/) |
 | Kth Largest Element in an Array | Array, Heap, Divide and Conquer | Medium | High | [LeetCode 215](https://leetcode.com/problems/kth-largest-element-in-an-array/) |
