@@ -50,7 +50,6 @@
 | 反转链表 | 链表, 递归 | 简单 | 高 | [LeetCode 206](https://leetcode.cn/problems/reverse-linked-list/) |
 | 合并两个有序链表 | 链表, 递归 | 简单 | 中 | [LeetCode 21](https://leetcode.cn/problems/merge-two-sorted-lists/) |
 | 移除元素 | 数组, 双指针 | 简单 | 中 | [LeetCode 27](https://leetcode.cn/problems/remove-element/) |
-| 买卖股票的最佳时机 | 数组, 动态规划 | 简单 | 高 | [LeetCode 121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) |
 | 整数反转 | 数学 | 简单 | 中 | [LeetCode 7](https://leetcode.cn/problems/reverse-integer/) |
 | 回文数 | 数学 | 简单 | 中 | [LeetCode 9](https://leetcode.cn/problems/palindrome-number/) |
 | 罗马数字转整数 | 哈希表, 字符串 | 简单 | 低 | [LeetCode 13](https://leetcode.cn/problems/roman-to-integer/) |
@@ -59,6 +58,7 @@
 | 环形链表 | 链表, 双指针 | 简单 | 中 | [LeetCode 141](https://leetcode.cn/problems/linked-list-cycle/) |
 | 爬楼梯 | 动态规划 | 简单 | 高 | [LeetCode 70](https://leetcode.cn/problems/climbing-stairs/) |
 | 删除排序链表中的重复元素 | 链表 | 简单 | 低 | [LeetCode 83](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) |
+| 买卖股票的最佳时机 | 数组, 动态规划 | 中等 | 高 | [LeetCode 121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) |
 | 搜索二维矩阵 | 数组, 二分查找 | 中等 | 中 | [LeetCode 74](https://leetcode.cn/problems/search-a-2d-matrix/) |
 | 链表上的数字相加 | 链表, 数学 | 中等 | 高 | [LeetCode 2](https://leetcode.cn/problems/add-two-numbers/) |
 | 无重复字符的最长子串 | 哈希表, 字符串, 滑动窗口 | 中等 | 高 | [LeetCode 3](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) |
