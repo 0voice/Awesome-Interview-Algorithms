@@ -6,6 +6,7 @@ A curated list of high-frequency LeetCode problems for Big Tech interviews✨
 
 ## 🧭 Quick Navigation
 [Big Tech Algorithm Questions](#-big-tech-algorithm-questions)  
+[Question Preferences](https://github.com/0voice/Awesome-Interview-Algorithms/tree/main/variants)  
 [Core Exam Points](#-core-exam-points)  
 [High-Frequency Question Summary](#-high-frequency-question-summary)  
 [Practice Platforms](#-practice-platforms)  
